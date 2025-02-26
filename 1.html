@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js" defer></script>
+    <style> @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');</style>
+    <script src="https://kit.fontawesome.com/53b8753f77.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.svg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="images/slide-1.svg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="images/slide-2.svg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="images/slide-3.svg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="images/slide-4.svg" alt="Slide 4">
+                </div>
+            </div>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Gericho Miles Vizcarra</span><br>from the Philippines</h1>
+            </div>
+        </div>
+
+        
+
+    </div>
+ <!----------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Gericho Miles B. Vizcarra, a passionate software engineer from the Philippines. With a strong computer science background and a drive for innovation, I strive to push technological boundaries. Through the Software Engineer Bootcamp at Zuitt coding bootcamp and Google Developer Skills & Web Development Training, I've gained invaluable expertise and earned the prestigious Google Developers Certification. With a focus on continuous learning, I'm equipped to handle complex challenges and deliver top-notch results. Explore my portfolio to see my projects and let's connect to collaborate on shaping the future of technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Custom Software Development</span><br>Experience in software architecture and design patterns</li>
+                                <li><span>Cloud Computing and Deployment</span><br>Proficiency in deploying and managing applications in a cloud environment</li>
+                                <li><span>Intelligent Automation</span><br>Knowledge of machine learning and artificial intelligence algorithms</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2029-2030</span><br>Computer Programmer III at DOST-Central Office PES-Information Technology Division</li>
+                                <li><span>2027-2029</span><br>Intern at ADP Philippines Inc., Makati, Metro Manila</li>
+                                <li><span>2026-2027</span><br>Internship at DOST Advanced Science and Technology Institute, Quezon City</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2030</span><br>Google Data Analytics Professional Certificate</li>
+                                <li><span>2029</span><br>Master of Science in Software Engineering at TECH Philippines</li>
+                                <li><span>2027</span><br>Bachelor of Science in Computer Science at Lorma Colleges</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="slideshow-container slideshow-container" >
+            <div class="slide">
+                <img src="images/slide-1.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/slide-2.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/slide-3.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="images/slide-4.svg" alt="Slide 4">
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Software Development</h2>
+                <p>Building customized software solutions tailored to meet specific business needs. This involves analyzing requirements, designing the software architecture, writing code, and testing the application.</p>
+                <a href="https://www.ibm.com/topics/software-development">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h2>Cloud Computing and Deployment</h2>
+                <p>Deploying software applications on cloud platforms like Amazon Web Services (AWS), Microsoft Azure, or Google Cloud, leveraging the benefits of scalability, reliability, and cost-efficiency.</p>
+                <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i>
+                <h2>Intelligent Automation</h2>
+                <p>Building systems that can automate repetitive tasks, streamline workflows, and improve efficiency using techniques like robotic process automation (RPA) and AI-driven process automation.</p>
+                <a href="https://www.ibm.com/topics/intelligent-automation">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="slideshow-container slideshow-container" >
+            <div class="slide">
+                <img src="images/slide-5.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/slide-6.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/slide-7.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="images/slide-4.svg" alt="Slide 4">
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>E-commerce Website Development</h3>
+                    <p>Delivered a fully functional e-commerce website that provided users with a seamless shopping experience, increased online sales, and improved customer satisfaction.</p>
+                    <a href="https://www.zalora.com.ph/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Migration to Cloud Infrastructure</h3>
+                    <p>Successfully migrated the company's infrastructure to the cloud, resulting in improved scalability, reduced operational costs, and increased system resilience and flexibility.</p>
+                    <a href="https://www.dynatrace.com/monitoring/solutions/cloud-migration/?utm_source=google&utm_medium=cpc&utm_term=cloud%20migration&utm_campaign=ask-2-im-cloud-monitoring&utm_content=none&utm_campaign_id=15348786872&gclsrc=aw.ds&gclid=Cj0KCQjw7PCjBhDwARIsANo7CgmTYdxfHItsqWUOy7IPUdYRBYwfYqrFs8UC8pnhBUMXDjhtt6P-1ogaAt2hEALw_wcB"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Intelligent Chatbot for Customer Support</h3>
+                    <p>Successfully deployed the intelligent chatbot, resulting in significant reduction in customer support response times, improved customer satisfaction, and increased operational efficiency for the company.</p>
+                    <a href="https://sendbird.com/solutions/chat-support?utm_medium=paid-search&utm_source=google&utm_content=support&utm_campaign=2023-q1-paid-search-google-support&_bt=653819640949&_bk=chatbot%20for%20customer%20support&_bm=e&_bn=g&gclid=Cj0KCQjw7PCjBhDwARIsANo7CgkZ2OqfVLy_s_vR50HP-3EGFPmwBiTDTfprsYsmrsrvunkGIHQD2HUaAqUZEALw_wcB"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://nevonprojects.com/project-ideas/software-project-ideas/" class="btn">See more</a>
+    </div>
+</div>
+<!--------portfolio--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gerichomiles@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+63 (956) 099 5656</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gericho-miles-vizcarra-222933279"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/gerichomiles0904"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://instagram.com/echoechoego?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/thorragnarok00"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © ECHO.CO 2023.</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+</body>
+
+</html>
